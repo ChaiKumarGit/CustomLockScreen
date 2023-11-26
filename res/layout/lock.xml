@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" >
+
+        <TextView
+            android:id="@+id/TimeTextViewLable"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:text="TIME: " />
+
+        <TextView
+            android:id="@+id/TimeTextView"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="39dp"
+            android:text="TIME" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/LockEditText"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:password="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/lockb1"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignLeft="@+id/LockEditText"
+        android:layout_centerVertical="true"
+        android:onClick="@string/buttonFunCall"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/lockb2"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignLeft="@+id/lockb5"
+        android:layout_centerVertical="true"
+        android:onClick="@string/buttonFunCall"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/lockb3"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignLeft="@+id/lockb9"
+        android:layout_centerVertical="true"
+        android:onClick="@string/buttonFunCall"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/lockb4"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_below="@+id/lockb1"
+        android:layout_toLeftOf="@+id/lockb5"
+        android:onClick="@string/buttonFunCall"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/lockb5"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignBaseline="@+id/lockb4"
+        android:layout_alignBottom="@+id/lockb4"
+        android:layout_toRightOf="@+id/lockb1"
+        android:onClick="@string/buttonFunCall"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/lockb6"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignLeft="@+id/lockb3"
+        android:layout_below="@+id/lockb3"
+        android:onClick="@string/buttonFunCall"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/lockb7"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_below="@+id/lockb4"
+        android:layout_toLeftOf="@+id/lockb5"
+        android:onClick="@string/buttonFunCall"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/lockb8"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignLeft="@+id/lockb5"
+        android:layout_below="@+id/lockb5"
+        android:onClick="@string/buttonFunCall"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/lockb9"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_below="@+id/lockb6"
+        android:layout_toRightOf="@+id/lockb5"
+        android:onClick="@string/buttonFunCall"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/lockb0"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_below="@+id/lockb7"
+        android:layout_toLeftOf="@+id/lockb8"
+        android:onClick="@string/buttonFunCall"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/lockbCLEAR"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_below="@+id/lockb7"
+        android:layout_toRightOf="@+id/lockb7"
+        android:onClick="@string/buttonFunCall"
+        android:text="CLR" />
+
+    <Button
+        android:id="@+id/lockbOK"
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_alignLeft="@+id/lockb9"
+        android:layout_below="@+id/lockb9"
+        android:onClick="unlock"
+        android:text="OK" />
+
+</RelativeLayout>

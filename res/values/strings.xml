@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lock Screen</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">TIME</string>
+    <string name="buttonFunCall">getUserKey</string>
+
+</resources>
